@@ -17,7 +17,7 @@ body {
     background-color: rgb(211, 209, 209);
 }
 
-header {
+#header-pagina {
     background-color: rgb(255, 255, 255);
 }
 
@@ -28,7 +28,14 @@ h1 {
     padding: 5px 20px;
 }
 
-
+/*************************
+    CLASSI RIUTILIZZABILI
+**************************/
+.container {
+    max-width: 80%;
+    margin: 20px auto;
+    background-color: blue;
+}
 
 /**********************
        RESPONSIVE
