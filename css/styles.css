@@ -8,13 +8,26 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+}
+
+body {
+    background-color: rgb(211, 209, 209);
+}
+
+header {
+    background-color: rgb(255, 255, 255);
 }
 
 h1 {
     font-family: "Nerko One", cursive;
+    font-size: 4.5rem;
+    color: orange;
+    padding: 5px 20px;
 }
+
 
 
 /**********************
@@ -26,5 +39,17 @@ h1 {
 }
 /* todo VERSIONE SMARTPHONE */
 @media screen and (max-width: 640px) {
-    
+
+    /**********************
+        REGOLE GENERALI
+    ***********************/
+
+    /* html {
+        font-size: 12px;
+    } */
+
+    h1 {
+        text-align: center;
+    }
+
 }
