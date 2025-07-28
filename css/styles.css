@@ -32,13 +32,23 @@ h1 {
 
 h2 {
     color: #4E3969;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding: 30px 20px 0;
 }
 
 h4 {
     color: rgb(155, 153, 153);
     font-size: 1rem;
     font-weight: normal;
+}
+
+li {
+    list-style-type: none;
 }
 
 /***************************
@@ -48,6 +58,16 @@ h4 {
 /*! REGOLE FLEXBOX */
 .flex-row {
     display: flex;
+}
+
+/*! OMBRE5 */
+.shadow {
+    box-shadow: 1px 1px white;
+}
+
+/*! TESTO */
+.text {
+    font-size: 1.2rem;
 }
 
 /*! SPAZIATURE */
@@ -73,41 +93,36 @@ h4 {
 }
 
 /*! INTESTAZIONE CATEGORIA */
-.header-categoria-ricetta {
-
-    /* Debug */
-    width: 100%;
-    min-height: 200px;
-    background-color: rgb(255, 0, 64);
-}
-
 .h2-mobile {
     display: none;
 }
 
 /*! VIDEO + DESCRIZIONE RICETTA */
-.video-descrizione-ricetta {
-
-    /* Debug */
-    width: 100%;
-    min-height: 200px;
-    background-color: rgb(76, 0, 255);
-}
-
 .item-col-sx {
     width: 70%;
     
     /* Debug */
-    min-height: 200px;
-    background-color: rgb(43, 255, 0);
+    /* min-height: 200px; */
+    /* background-color: rgb(43, 255, 0); */
+}
+
+.img-video-tiramisu {
+    display: block;
+    width: 100%;
 }
 
 .item-col-dx {
     width: 30%;
+    height: auto;
+    background-color: white;
 
     /* Debug */
-    min-height: 200px;
-    background-color: rgb(180, 18, 171);
+    /* min-height: 200px; */
+    /* background-color: rgb(180, 18, 171); */
+}
+
+.item-col-dx ul li {
+    padding: 12px 20px;
 }
 
 /*! SOCIAL */
@@ -173,6 +188,16 @@ footer {
     /*! VIDEO + DESCRIZIONE RICETTA */
     .item-col-sx, .item-col-dx  {
         width: 100%;
+    }
+
+    .lista-in-breve {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .lista-in-breve li {
+        flex-basis: calc(100% / 3);
+    }
 }
     
 
@@ -203,19 +228,18 @@ footer {
     }
 
     /*! INTESTAZIONE CATEGORIA */
-    .header-categoria-ricetta {
-
-        /* Debug */
-        width: 100%;
-        min-height: 200px;
-        background-color: rgb(255, 0, 64);
-    }
 
     .h2-desktop {
         display: none;
     }
 
     .h2-mobile {
+        display: block;
+    }
+
+    /*! VIDEO + DESCRIZIONE RICETTA */
+
+    .lista-in-breve {
         display: block;
     }
 
