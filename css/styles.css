@@ -1,0 +1,30 @@
+/**********************
+    REGOLE GENERALI
+***********************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-family: "Nerko One", cursive;
+}
+
+
+/**********************
+       RESPONSIVE
+***********************/
+/* todo VERSIONE TABLET */
+@media screen and (max-width: 1019px) {
+    
+}
+/* todo VERSIONE SMARTPHONE */
+@media screen and (max-width: 640px) {
+    
+}
