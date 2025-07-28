@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    background-color: rgb(211, 209, 209);
+    background-color: rgb(222, 222, 222);
 }
 
 #header-pagina {
@@ -30,6 +30,15 @@ h1 {
     padding: 5px 20px;
 }
 
+h2 {
+    color: #4E3969;
+    font-size: 2.5rem;
+}
+
+h4 {
+    color: rgb(155, 153, 153);
+    font-size: 1rem;
+}
 
 /***************************
     CLASSI RIUTILIZZABILI
@@ -37,6 +46,10 @@ h1 {
 
 /*! REGOLE FLEXBOX */
 
+/*! SPAZIATURE */
+.margin-bottom-5 {
+    margin-bottom: 5px;
+}
 
 /*************************
     SEZIONI PRINCIPALI
@@ -105,13 +118,22 @@ footer {
     /* Debug */
     width: 100%;
     min-height: 90px;
-    background-color: rgb(184, 123, 244);
+    background-color: #7C69A4;
 }
 
 /****************************************************  VERSIONE TABLET  *************************************************************/
 
 /* todo VERSIONE TABLET */
 @media screen and (max-width: 1019px) {
+
+    /*************************
+        SEZIONI PRINCIPALI
+    **************************/
+    
+    /*! CONTENITORE PAGINA */
+    .container {
+        max-width: 90%;
+    }
 }
     
 
@@ -130,6 +152,15 @@ footer {
 
     h1 {
         text-align: center;
+    }
+
+    /*************************
+    SEZIONI PRINCIPALI
+    **************************/
+        
+    /*! CONTENITORE PAGINA */
+    .container {
+        max-width: 95%;
     }
 
 }
