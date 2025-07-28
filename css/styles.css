@@ -100,10 +100,6 @@ li {
 /*! VIDEO + DESCRIZIONE RICETTA */
 .item-col-sx {
     width: 70%;
-    
-    /* Debug */
-    /* min-height: 200px; */
-    /* background-color: rgb(43, 255, 0); */
 }
 
 .img-video-tiramisu {
@@ -115,24 +111,31 @@ li {
     width: 30%;
     height: auto;
     background-color: white;
-
-    /* Debug */
-    /* min-height: 200px; */
-    /* background-color: rgb(180, 18, 171); */
 }
 
 .item-col-dx ul li {
     padding: 12px 20px;
 }
 
-/*! SOCIAL */
-.nav-social {
+/*! NAV SOCIAL */
 
-    /* Debug */
-    width: 100%;
-    min-height: 40px;
-    background-color: rgb(255, 187, 0);
+button {
+    border: white;
+    border-radius: 56px;
+    padding: 10px 35px;
+    margin: 20px 0;
 }
+
+.flex-row-nav-social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.lista-social-tablet-smartphone {
+    display: none;
+}
+
 
 /*! BANNER PUBBLICITARIO */
 .aside-banner {
@@ -175,7 +178,6 @@ footer {
     }
 
 
-
     /*************************
         SEZIONI PRINCIPALI
     **************************/
@@ -197,6 +199,20 @@ footer {
 
     .lista-in-breve li {
         flex-basis: calc(100% / 3);
+    }
+
+    /*! NAV SOCIAL */
+
+    button {
+        padding: 10px 60px;
+    }
+
+    .lista-social-desktop {
+        display: none;
+    }
+
+    .lista-social-tablet-smartphone {
+        display: flex;
     }
 }
     
@@ -241,6 +257,12 @@ footer {
 
     .lista-in-breve {
         display: block;
+    }
+
+    /*! NAV SOCIAL */
+
+    button {
+        padding: 8px 17px;
     }
 
 }
