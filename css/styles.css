@@ -37,8 +37,6 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    margin-bottom: 20px;
-    padding: 30px 20px 0;
 }
 
 h4 {
@@ -60,7 +58,18 @@ li {
     display: flex;
 }
 
-/*! OMBRE5 */
+.space-between {
+    justify-content: space-between;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.col-gap-20 {
+    column-gap: 20px;
+}
+/*! OMBRE */
 .shadow {
     box-shadow: 1px 1px white;
 }
@@ -75,6 +84,10 @@ li {
     margin-bottom: 5px;
 }
 
+.padding-bottom-7 {
+    padding-bottom: 7px;
+}
+
 /*************************
     SEZIONI PRINCIPALI
 **************************/
@@ -83,9 +96,6 @@ li {
 .container {
     max-width: 80%;
     margin: 50px auto;
-
-    /* Debug */
-    /* background-color: rgb(210, 0, 147); */
 }
 
 .container > * {
@@ -113,23 +123,24 @@ li {
     background-color: white;
 }
 
+.item-col-dx h3 {
+    padding: 30px 20px 0;
+}
+
 .item-col-dx ul li {
     padding: 12px 20px;
 }
 
 /*! NAV SOCIAL */
+.presentazione-ricetta h3 {
+    font-weight: normal;
+}
 
 button {
     border: white;
     border-radius: 56px;
     padding: 10px 35px;
     margin: 20px 0;
-}
-
-.flex-row-nav-social {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
 }
 
 .lista-social-tablet-smartphone {
@@ -139,25 +150,57 @@ button {
 
 /*! BANNER PUBBLICITARIO */
 .img-banner {
-    display: inline;
     width: 100%;
+    margin-bottom: 15px;
 }
 
 /*! PRESENTAZIONE RICETTA */
-.presentazione-ricetta {
+.border {
+    border: 1.5px solid orange;
+    width: 9%;
+    margin: 10px 0 30px;
+}
 
-    /* Debug */
-    width: 100%;
-    min-height: 200px;
-    background-color: rgb(36, 171, 230);}
+p {
+    line-height: 1.8;       /* interlinea */
+}
+
+.img-float-tiramisu {
+    float: left;
+    width: 247px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
 
 /*! FOOTER */
 footer {
-
-    /* Debug */
-    width: 100%;
-    min-height: 90px;
     background-color: #7C69A4;
+}
+
+footer, footer a {
+    color: white;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.container-footer address {
+    font-style: normal;
+}
+
+.nav-footer {
+    flex-wrap: nowrap;
 }
 
 /****************************************************  VERSIONE TABLET  *************************************************************/
@@ -170,7 +213,7 @@ footer {
     ***************************/
         
     /*! REGOLE FLEXBOX */
-    .flex-row {
+    .container article .flex-row {
         display: block;
     }
 
@@ -211,6 +254,19 @@ footer {
     .lista-social-tablet-smartphone {
         display: flex;
     }
+
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    footer address {
+        text-align: center;
+    }
+
+
 }
     
 
@@ -222,11 +278,6 @@ footer {
     /**********************
         REGOLE GENERALI
     ***********************/
-
-    /* html {
-        font-size: 12px;
-    } */
-
     h1 {
         text-align: center;
     }
@@ -267,4 +318,23 @@ footer {
         display: none;
     }
 
+    /*! PRESENTAZIONE RICETTA */
+    .img-float-tiramisu {
+        float: none;
+        display: block;
+        margin:  auto;
+    }
+
+    /*! NAV SOCIAL */
+    .nav-footer {
+        flex-wrap: wrap;
+    }
+
+    .nav-footer > li {
+        flex-basis: calc((100% - 80px)/4);  
+    }
+
+    .nav-footer > li:last-child {
+        padding-top: 10px;
+    }
 }
