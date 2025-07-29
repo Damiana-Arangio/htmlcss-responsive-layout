@@ -66,8 +66,8 @@ li {
     flex-wrap: nowrap;
 }
 
-.col-gap-20 {
-    column-gap: 20px;
+.col-gap-30 {
+    column-gap: 30px;
 }
 /*! OMBRE */
 .shadow {
@@ -326,12 +326,17 @@ footer, footer a {
     }
 
     /*! NAV SOCIAL */
+    nav {
+        width: 75%; 
+    }
+
     .nav-footer {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .nav-footer > li {
-        flex-basis: calc((100% - 80px)/4);  
+        flex-basis: calc((100%-60px)/4);  
     }
 
     .nav-footer > li:last-child {
